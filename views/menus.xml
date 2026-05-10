@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_travel_root" name="Traveloop" sequence="10"/>
+    <menuitem id="menu_travel_trips" name="My Trips" parent="menu_travel_root" action="action_travel_trip" sequence="10"/>
+
+    <record id="action_travel_trip" model="ir.actions.act_window">
+        <field name="name">Trips</field>
+        <field name="res_model">travel.trip</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+</odoo>
